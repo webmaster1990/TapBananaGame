@@ -69,8 +69,6 @@ export class View2 extends Component {
   showText() {
       return (
         <div className="before-play">
-          <h1 className="caption">Guess what will happen next</h1>
-          <p className="text">PLAY THIS VIDEO AND SELECT YOUR BEST GUESS</p>
           <TapButton2 btnImg={`${bananabtn}`} className={this.state.className} onTapButton={this.onTapButton}/>
         </div>
       );
