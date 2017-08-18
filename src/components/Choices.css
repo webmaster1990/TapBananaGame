@@ -1,0 +1,20 @@
+﻿
+.choice-item {
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+.choice-item:hover {
+  background-color: deeppink;
+}
+.abc {
+  font-weight: bold;
+  padding-left: 1rem;
+}

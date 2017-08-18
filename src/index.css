@@ -1,0 +1,42 @@
+@font-face { font-family: HelveticaNeueLT-BlackCond; src: url('assets/HelveticaNeueLT-BlackCond.ttf'); }
+@font-face { font-family: HelveticaNeueLTStd-Md; src: url('assets/HelveticaNeueLTStd-Md.ttf'); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: HelveticaNeueLTStd-Md, 'Oswald', sans-serif;
+  color: #d3d3d3;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+#root {
+  height: 100%;
+}
+html {
+  font-size: 14px;
+}
+@media screen and (max-width: 359px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 499px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}

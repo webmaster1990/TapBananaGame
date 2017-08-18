@@ -1,0 +1,65 @@
+
+.title {
+  font-size: 24pt;
+  text-transform: uppercase;
+}
+
+.result {
+  font-family: HelveticaNeueLT-BlackCond, sans-serif;
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  font-size: 4rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 4px 4px 4px #888;
+  font-family: HELVETICA-CONDENSED-BLACK-SE_1, sans-serif;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.view3-button-part {
+  position: absolute;
+  bottom: 0;
+  height: 15%;
+  background-color: rgba(230, 230, 230, 0.7);
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#view3button {
+  width: 12rem;
+  height: 4rem;
+  margin: auto;
+  margin-top: 8%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  border: 3px solid #000;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+}
+
+.selected-item {
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  text-align: left;
+}
+.abc {
+  font-weight: bold;
+  padding-left: 1rem;
+}
