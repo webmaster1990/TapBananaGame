@@ -1,0 +1,25 @@
+{
+  "name": "aq-miniapp-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aq-miniapp": "https://bitbucket.org/aqsoftware/aq-miniapp.git",
+    "iphone-inline-video": "^2.2.2",
+    "prop-types": "^15.5.9",
+    "query-string": "^4.3.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "4.1.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.45.0",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
