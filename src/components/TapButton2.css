@@ -16,7 +16,6 @@
 }
 .round-button a {
     display:block;
-    float:left;
     width:100%;
     position: relative;
     transition: top 2s;
@@ -30,13 +29,14 @@
 
 .round-button a.slideUp {
     position: absolute;
-    top: -40vh;
+    top: -46vh;
+    margin-left: 90px;
 }
 
 .round-button img {
     height: 75%;
-    width:75%;
-    margin-top: 10px;
+    width:50%;
+    margin-top: 30px;
 }
 
 @media only screen and (min-width: 520px) and (max-width: 768px){
