@@ -47,6 +47,11 @@
         width: 15%;
         max-width: 20em;
     }
+    .round-button a.slideUp {
+        position: absolute;
+        top: -46vh;
+        margin-left: 20px;
+    }
 }
 
 @media only screen and (max-width: 520px){
@@ -56,5 +61,45 @@
     }
     .round-button a {
         max-width: 7em;
+    }
+    .round-button a.slideUp {
+        position: absolute;
+        top: -46vh;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .round-button {
+        max-width: 20em;
+        width: 25%;
+    }
+    .round-button a {
+        max-width: 8em;
+    }
+    .round-button a.slideUp {
+        position: absolute;
+        top: -46vh;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 360px){
+    .round-button a.slideUp {
+        top: -46vh;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 424px){
+    .round-button a.slideUp {
+        top: -46vh;
+        margin-left: 20px;
+    }
+}
+@media only screen and (min-width: 720px){
+    .round-button a.slideUp {
+        top: -42vh;
+        margin-left: 20px;
     }
 }
