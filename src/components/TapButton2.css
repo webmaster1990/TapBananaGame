@@ -22,15 +22,29 @@
     -moz-transition: top 2s;
     -webkit-transition:top 2s;
     -o-transition: top 2s;
+
     top: 0;
     margin: auto;
     max-width: 100px;
 }
-
 .round-button a.slideUp {
     position: absolute;
     top: -46vh;
-    margin-left: 90px;
+
+    -webkit-transition-property: top, left;
+    -moz-transition-property: top, left;
+    -o-transition-property: top, left;
+    -ms-transition-property: top, left;
+    
+    -webkit-transition-duration: 2s, 1s, 0.5s, 0.5s;
+    -moz-transition-duration: 2s, 1s, 0.5s, 0.5s;
+    -o-transition-duration: 2s, 1s, 0.5s, 0.5s;
+    -ms-transition-duration: 2s, 1s, 0.5s, 0.5s;
+    transition-duration: 2s, 1s, 0.5s, 0.5s;  
+    -webkit-transition-delay: 0s, 0.5s, 1s, 1.5s;
+    -moz-transition-delay: 0s, 0.5s, 1s, 1.5s;
+    -o-transition-delay: 0s, 0.5s, 1s, 1.5s;
+    -ms-transition-delay: 0s, 0.5s, 1s, 1.5s;
 }
 
 .round-button img {
@@ -50,22 +64,6 @@
     .round-button a.slideUp {
         position: absolute;
         top: -46vh;
-        margin-left: 20px;
-    }
-}
-
-@media only screen and (max-width: 520px){
-    .round-button {
-        max-width: 20em;
-        width: 25%;
-    }
-    .round-button a {
-        max-width: 7em;
-    }
-    .round-button a.slideUp {
-        position: absolute;
-        top: -46vh;
-        margin-left: 20px;
     }
 }
 
@@ -80,26 +78,66 @@
     .round-button a.slideUp {
         position: absolute;
         top: -46vh;
-        margin-left: 20px;
     }
 }
 
 @media only screen and (max-width: 375px) and (min-width: 360px){
     .round-button a.slideUp {
         top: -46vh;
-        margin-left: 20px;
     }
 }
 
 @media only screen and (max-width: 425px) and (min-width: 424px){
     .round-button a.slideUp {
         top: -46vh;
-        margin-left: 20px;
     }
 }
-@media only screen and (min-width: 720px){
+
+/* @media only screen and (min-width: 720px){
     .round-button a.slideUp {
-        top: -42vh;
-        margin-left: 20px;
+        top: -47vh;
+        left: 435px;
+    }
+} */
+
+/*
+@media only screen and (max-width: 520px) {
+    .round-button {
+        max-width: 20em;
+        width: 25%;
+    }
+    .round-button a {
+        max-width: 7em;
+    }
+    .round-button a.slideUp {
+        position: absolute;
+        top: -49.5vh;
+        left:195px;        
+    }
+}*/
+
+@media only screen and (max-width: 480px) {
+	.round-button a.slideUp {
+        position: absolute;
+        top: -49.5vh;
+        left: 155px;
+    }
+}
+
+/* iPhone 6 portrait */
+@media only screen and (min-width: 375px) and (max-width: 667px){
+    .round-button a.slideUp {
+        position: absolute;
+        top: -49.5vh;    
+        left: 190px;
+    }
+}
+
+/* iPhone 6 Plus portrait */
+@media only screen and (min-width: 414px) and (max-width: 736px){
+    .round-button a.slideUp {
+        position: absolute;
+        top: -49.5vh;    
+        left: 215px;
     }
 }

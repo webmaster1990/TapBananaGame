@@ -50,16 +50,21 @@ export class View2 extends Component {
   onTapButton() {
     if ( problems.length  > this.state.curProblemNo + 1 ) {
       this.setState({
-        className: 'slideUp',
         curProblemNo: this.state.curProblemNo + 1
       });
+      this.videoElement.load();
+      this.videoElement.play();
       setTimeout(() => {
         this.setState({
-          className: '',
+          className: 'slideUp',
         });
-        this.videoElement.load();
-        this.videoElement.play();
-      }, 2000);
+        
+      }, 500);
+      setTimeout(() => {
+        this.setState({
+          className: 'slideUp active',
+        });
+      }, 500);
     } else {
       this.props.onClick();
     }
