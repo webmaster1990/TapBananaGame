@@ -7,6 +7,7 @@ export function Video(props) {
   return (
     <video  
       playsInline
+      onEnded={props.replayVideo}
       id="videoFrame" 
       ref={props.videoRef} 
       onTimeUpdate={
