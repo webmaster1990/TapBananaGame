@@ -6,7 +6,7 @@ import {Background} from 'aq-miniapp';
 import {Video} from '../../components/Video';
 import {TapButton2} from '../../components/TapButton2';
 import {problems} from '../../components/problems';
-import bg from '../../assets/When-Reality-Strikes-bg.jpg';
+import bg from '../../assets/bg.jpg';
 import bananabtn from '../../assets/banana_image.png';
 import '../css/View2.css';
 

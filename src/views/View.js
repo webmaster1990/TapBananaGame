@@ -10,7 +10,7 @@ import {
   View1,
   View2,
 } from './js';
-import bg from '../assets/background.jpg';
+import bg from '../assets/bg.jpg';
 
 import type { Output } from './Types';
 
