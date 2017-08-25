@@ -32,6 +32,7 @@ export class View2 extends Component {
 
     this.showText = this.showText.bind(this);
     this.onTapButton = this.onTapButton.bind(this);
+    this.replayVideo = this.replayVideo.bind(this);
   }
 
   componentDidMount() {
@@ -44,6 +45,15 @@ export class View2 extends Component {
         this.className -= " loading";
       });
       this.videoElement.play();
+    }
+  }
+
+  replayVideo = () => {
+    if ( this.state.curProblemNo === 0 ) {
+      this.videoElement.play();
+    }
+    else if ( this.state.curProblemNo === 1 ) {
+      this.props.onClick();
     }
   }
 
@@ -89,6 +99,7 @@ export class View2 extends Component {
           problems[this.state.curProblemNo] &&
         <Video video={problems[this.state.curProblemNo].video}
                videoRef={el => this.videoElement = el}
+               replayVideo={this.replayVideo}
           />
         }
         {this.showText()}
