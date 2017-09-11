@@ -9,7 +9,8 @@ export function Video(props) {
       playsInline
       onEnded={props.replayVideo}
       id="videoFrame" 
-      ref={props.videoRef} 
+      ref={props.videoRef}
+      style={ props.style }
       onTimeUpdate={
         (event)=>{
           if (props.stopPosition){

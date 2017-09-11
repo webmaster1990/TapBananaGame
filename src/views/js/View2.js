@@ -46,6 +46,16 @@ export class View2 extends Component {
       });
       this.videoElement.play();
     }
+    if (this.videoElement2) {
+      enableInlineVideo(this.videoElement2);
+      this.videoElement2.addEventListener("loadstart", function (event) {
+        this.className += " loading";
+      });
+      this.videoElement2.addEventListener("loadedmetadata", function (event) {
+        this.className -= " loading";
+      });
+      this.videoElement2.load();
+    }
   }
 
   replayVideo = () => {
@@ -62,8 +72,7 @@ export class View2 extends Component {
       this.setState({
         curProblemNo: this.state.curProblemNo + 1
       });
-      this.videoElement.load();
-      this.videoElement.play();
+      this.videoElement2.play();
       setTimeout(() => {
         this.setState({
           className: 'slideUp',
@@ -95,13 +104,16 @@ export class View2 extends Component {
         <Background
           image={bg}
         />
-        {
-          problems[this.state.curProblemNo] &&
-        <Video video={problems[this.state.curProblemNo].video}
-               videoRef={el => this.videoElement = el}
+
+        <Video video={problems[0].video} style={this.state.curProblemNo===1?{display:'none'}:{}}
+             videoRef={el => this.videoElement = el}
+             replayVideo={this.replayVideo}
+        />
+        <Video video={problems[1].video} style={this.state.curProblemNo===0?{display:'none'}:{}}
+               videoRef={el => this.videoElement2 = el}
                replayVideo={this.replayVideo}
-          />
-        }
+        />
+
         {this.showText()}
       </div>
     )
